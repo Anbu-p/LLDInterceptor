@@ -1,6 +1,10 @@
 package service;
 
+import java.util.Stack;
+
 public interface CallBack {
 
-    void add(final long result);
+    Long add(final long result, final Stack<Integer> stack);
+
+    Long delete(final Stack<Integer> stack);
 }
